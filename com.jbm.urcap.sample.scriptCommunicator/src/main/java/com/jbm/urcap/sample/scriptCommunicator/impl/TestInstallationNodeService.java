@@ -17,7 +17,7 @@ public class TestInstallationNodeService implements SwingInstallationNodeService
 
 	@Override
 	public String getTitle(Locale locale) {
-		return "Script Communicator";
+		return "IO Test";
 	}
 
 	@Override
