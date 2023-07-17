@@ -6,6 +6,8 @@ syntax: glob
 *.off
 *.old
 
+target/
+
 # Eclipse
 .classpath
 .project

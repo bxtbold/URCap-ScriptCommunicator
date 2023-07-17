@@ -1,4 +1,4 @@
-package com.jbm.urcap.sample.scriptCommunicator.communicator;
+package com.bxtbold.urcap.testIO.communicator;
 
 public class ScriptCommand {
 

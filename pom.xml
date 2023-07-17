@@ -5,10 +5,10 @@
 
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.jbm.urcap.sample</groupId>
-	<artifactId>scriptCommunicator</artifactId>
-	<version>${git.commit.id.describe}</version>
-	<name>scriptCommunicator</name>  
+	<groupId>com.bxtbold.urcap</groupId>
+	<artifactId>testIO</artifactId>
+	<version>1.0.0</version>
+	<name>testIO</name>
 	<packaging>bundle</packaging>
 
 	<properties>
@@ -18,7 +18,7 @@
 		<!--         that comes along with your URCap                           -->
 		<!--********************************************************************-->
 		<!--******************* BEGINNING OF URCAP META DATA *******************-->
-		<urcap.symbolicname>com.jbm.urcap.sample.scriptCommunicator</urcap.symbolicname>
+		<urcap.symbolicname>com.bxtbold.urcap.testIO</urcap.symbolicname>
 		<urcap.vendor>URCaps R us Inc.</urcap.vendor>
 		<urcap.contactAddress>123 URCap Street</urcap.contactAddress>
 		<urcap.copyright>Copyright notice (C)</urcap.copyright>
@@ -32,8 +32,11 @@
 		<urcap.install.username>root</urcap.install.username>
 		<urcap.install.password>easybot</urcap.install.password>
 
+		<!-- Encoding -->
+		<project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
+
 		<!--Install path for the UR Sim-->
-		<ursim.home>/home/jbm/ursim/ursim-3.7.0.40195/</ursim.home>
+		<ursim.home></ursim.home>
 
 		<!--Host and standard user/password for UR Sim running in a VM-->
 		<ursimvm.install.host></ursimvm.install.host>
@@ -60,7 +63,7 @@
 				<dotGitDirectory>${project.basedir}/.git</dotGitDirectory>
 			    </configuration>
 			</plugin>
-		
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -70,7 +73,7 @@
 					<target>1.6</target>
 				</configuration>
 			</plugin>
-			<plugin> 
+			<plugin>
 				<artifactId>maven-jar-plugin</artifactId>
 				<version>3.0.2</version>
 				<configuration>
@@ -101,7 +104,7 @@
 					<instructions>
 						<!--********** DO NOT MODIFY THE ENTRIES OF THIS SECTION **********-->
 						<Bundle-Category>URCap</Bundle-Category>
-						<Bundle-Activator>com.jbm.urcap.sample.scriptCommunicator.impl.Activator</Bundle-Activator>
+						<Bundle-Activator>com.bxtbold.urcap.testIO.impl.Activator</Bundle-Activator>
 						<Bundle-Vendor>${urcap.vendor}</Bundle-Vendor>
 						<Bundle-ContactAddress>${urcap.contactAddress}</Bundle-ContactAddress>
 						<Bundle-Copyright>${urcap.copyright}</Bundle-Copyright>
